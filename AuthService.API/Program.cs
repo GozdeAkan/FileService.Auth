@@ -30,7 +30,7 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>(o =>
 
 builder.Services.AddIdentityServer(options =>
 {
-    options.IssuerUri = "https://myauth-bebhf3f4czfdb9fe.canadacentral-01.azurewebsites.net";
+    options.IssuerUri = "https://file-service-auth-f7ewejbae5ehh5hd.canadacentral-01.azurewebsites.net/";
     options.EmitStaticAudienceClaim = true;
 })
    .AddAspNetIdentity<IdentityUser>()
